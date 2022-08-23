@@ -55,7 +55,7 @@
 
         function getAllUser() {
 
-            axios.get('http://localhost:3000/users')
+            axios.get('https://database-connected-signupform.herokuapp.com/users')
                 .then(function (response) {
                     console.log(response.data);
 
@@ -87,7 +87,7 @@
                 return;
             }
 
-            axios.post('http://localhost:3000/signup', {
+            axios.post('https://database-connected-signupform.herokuapp.com/signup', {
 
                 firstName,
                 lastName,
